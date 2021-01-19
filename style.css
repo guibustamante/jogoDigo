@@ -1,0 +1,45 @@
+.body {
+    background: #fafafa;
+
+}
+
+.dino{
+    width: 60px; /*altura*/
+    height: 60px; /*largura*/
+    background-image: url(dino.png);
+    position: absolute;/*serve para definir como o elemento vai se posicionar... o absolute serve para o elemento vai ficar aonde definir idependente do que estiver em volta*/
+    bottom: 0; /*serve para deixar o elemento em baixo*/
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(cactus.png);
+    bottom: 0;
+}
+
+.game-over{
+    text-align: center; /*serve para alinhar o texto*/
+    color: #666666;
+    margin-top: 50px; /*vai dar uma margem encima*/
+    font-family: arial;
+}
+
+@keyframes slideright { /*animação do css*/
+    from {
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
